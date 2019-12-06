@@ -14,6 +14,7 @@
               <ion-label>
                 {{p.title}}
               </ion-label>
+              <ion-badge [color]="p.color" slot="end" *ngIf="p.notifications">{{ p.notifications }}</ion-badge>
             </ion-item>
           </ion-menu-toggle>
         </ion-list>
